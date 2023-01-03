@@ -1,0 +1,174 @@
+= Programmieraufgaben
+
+== Aufgabe
+
+[.text-justify]
+Führe folgende Klasse aus.
+
+[source,java]
+public static void main ( String[] args ) {
+    stringWithPlusOperator ();
+}
+
+[source,java]
+private static void stringWithPlusOperator () {
+    String currentString = "Hello";
+    System.out.println ( "Starting loop, please wait ..." );
+    long startTime = System.currentTimeMillis ();
+    for ( int i = 0; i < 10000; i++ ) {
+        currentString += "World";
+    }
+    long endTime = System.currentTimeMillis ();
+    System.out.println ( "With + Operator you need " + ( endTime - startTime ) + " milliseconds." );
+    System.out.println ( "The composite string has a length of " + currentString.length () + " characters." );
+}
+
+[.text-justify]
+Mithilfe dieser Klasse lässt sich ermitteln, wie die Performance des Verkettungsoperators + bei Strings ist.
+Die Zeit, welche die for-Schleife benötigt, wird in Millisekunden gemessen.
+Die Zeitmessung erfolgt mithilfe der Klasse System über die Funktion *currentTimeMillis ()*.
+
+[.text-justify]
+Die gemessene Zeit erscheint recht hoch.
+Wir benötigen allerdings einen Vergleich.
+Erstelle eine weitere Funktion *stringWithStringJoiner*, in dem der String "Hello" in einem Objekt der Klasse StringJoiner steht und der String "World" nicht über den Verkettungsoperator, sondern über die Methode add() der Klasse StringJoiner hinzugefügt wird.
+Der Rest soll gleich bleiben.
+Du kannst natürlich auch andere oder weitere Möglichkeiten programmieren und die Zeit messen.
+
+[.text-justify]
+Sofern du die Implementierung richtig durchgeführt hast, sollte dir auffallen, dass diese Operation wesentlich schneller ist.
+Versuche zu erklären warum.
+
+== Aufgabe
+
+[.text-justify]
+Benutze die Methoden der Klasse *String*, um dir einen eigenen *Parser* so schreiben.
+Erstelle die dazugehörige Klasse.
+Die Klasse hat die Aufgabe, aus einem vollständigen Pfad in Form eines Strings das Verzeichnis, den Dateinamen und die Extension der Datei zu ermitteln.
+Lautet zum beispiel der gesamte Pfad
+_C:\Eigene Daten\Javatest\Beispiel.java_ dann soll das Programm folgende Ausgabe machen.
+
+Extension: java
+
+Filename: Beispiel
+
+Directory: C:\Eigene Daten\Javatest
+
+== Aufgabe
+
+[.text-justify]
+Gegeben sei folgendes char Array
+
+[source,java]
+char [] aCharArray = {'A', 'l', 'f', 'r', 'e', 'd', ',', 'S', 'e', 'b', 'a', 's', 't', 'i', 'a', 'n'};
+
+[.text-justify]
+Schreibe die Klasse *ReversedArray* mit einer main - Methode.
+In dieser befindet sich das char Array.
+Schreibe die Methode *reverseArray*, die das char Array übergeben bekommt.
+Die Methode soll nun das Array rückwärts durchlaufen und ausgeben.
+Braucht die Methode einen Rückgabewert? rufe die Methode in der Main auf und teste die Ausgabe.
+
+== Aufgabe
+
+[.text-justify]
+Gegeben sei folgendes char Array
+
+[source,java]
+char [] aCharArray = {'A', 'l', 'f', 'r', 'e', 'd', ',', 'S', 'e', 'b', 'a', 's', 't', 'i', 'a', 'n'};
+
+[.text-justify]
+Schreibe die Klasse *SortArray* mit einer main Methode.
+In dieser befindet sich das char Array.
+Schreibe die Methode sort Array.
+Diese soll das char Array übergebene bekommen und die darin enthaltenen char Werte nach ihrem ASCII Code sortieren.
+Der höchste Wert soll links, der kleinste Rechts stehen.
+Lasse dir das sortierte Array auf der Konsole ausgeben.
+
+=== Zusatzaufgabe
+
+[.text-justify]
+Nach der Ausgabe stellen wir fest, dass das Array nach einem Durchlauf noch nicht fertig sortiert wurde.
+Wie würdest du eine Überprüfung gestalten die feststellt, ob das Array fertig sortiert wurde.
+Wie würdest du diese Erweiterung in deinen bestehenden Code integrieren?
+
+== Aufgabe
+
+[.text-justify]
+Schreibe die Klasse *Finder*, die eine main - Methode beinhaltet.
+In dieser soll folgendes Array gegeben sein.
+
+[source,java]
+int[] numbers = {  5, -20, 68, 10, 100, 88 }
+
+[.text-justify]
+Schreibe die Methode *arrayContainsNummer*.
+Diese Methode soll zwei Übergabeparameter besitzen.
+Zum einen das definierte int Array.
+Zum anderen eine Zahl die in diesem Array gefunden werden soll.
+Die Zahl soll vom Typ int sein.
+Die Methode soll das Array durchgehen und auf der Konsole ausgeben, ob sich die übergebene Zahl im Array befindet oder nicht.
+Wähle einen geeigneten Rückgabewert für die Methode.
+Rufe die Funktion in der Main Methode auf und überprüfe dein Ergebnis.
+
+== Aufgabe
+
+[.text-justify]
+Schreibe die Klasse *HeadsOrTails* mit einer main - Methode.
+In dieser ist folgendes array gegeben.
+
+[source,java]
+boolean[] kopfOderZahl = { true, false, false, true, false, true, false, true, false, true, false, true, true,true, true, true, false }
+
+[.text-justify]
+Dieses Array bildet ab, wie oft beim Werfen einer Münze Kopf oder Zahl gefallen ist.
+True steht für Kopf und false für Zahl.
+Schreibe die Methode *arrayContainsTenTimesHead* die das Array übergeben bekommt.
+In dieser soll ermittelt werden, of Kopf 10 Mal aufgetreten ist oder nicht.
+Definiere einen geeigneten Rückgabewert.
+Teste, ob die Funktion korrekt ist.
+Hierzu änderst du das Array einfach so ab, dass es weniger als 10 Mal true beinhaltet.
+
+== Aufgabe
+
+[.text-justify]
+Schreibe die Klasse *Reverse* mit einer main - Methode.
+Diese beinhaltet folgendes Array.
+
+[source,java]
+int[] normalArray = {5, -20, 68, 10, 100, 88}
+
+[.text-justify]
+Schreibe die Methode *reverseArray* die das Array übergeben bekommen kann.
+In dieser Methode soll das Array Rückwerts durchlaufen werden und der jeweilige Wert einem neuen Array zugewiesen werden.
+Die Methode hat den Rückgabewert int[].
+Nutze das neue Array, um dir den Inhalt ausgeben zu lassen.
+
+== Aufgabe
+
+[.text-justify]
+Schreibe die Klasse *MergeArrays* mit einer main - Methode.
+In dieser Klasse sind zwei Arrays definiert.
+Zum einen
+
+[source,java]
+int[] firstArray = {5, -20, 68, 10, 100, 88}
+
+[.text-justify]
+und zum anderen
+
+[source,java]
+int[] secondArray = {11, 22, 33, 44, 55, 66}
+
+[.text-justify]
+Schreibe die Methode *fromTwoMakeOne*.
+Diese Methode soll in der Lage sein beide Arrays entgegennehmen zu können.
+Diese Methode soll nun die Werte aus den Arrays nehmen und diese zu einem neuen Array verschmelzen.
+Allerdings sollen nicht stupide die Werte aus dem zweiten Array an die Werte des ersten hinzugefügt werden, sondern die Ausgabe des neuen Arrays soll wie folgt aussehen.
+
+[.text-justify]
+*5, 11, -20, 22, 68, 33, 10, 44, 100, 55, 88, 66*
+
+[.text-justify]
+Die größe des neuen Arrays soll sich aus der Länge der beiden übergebenen Arrays ermitteln.
+Zum Schluss soll das neue Array zurückgegeben werden.

@@ -1,0 +1,44 @@
+[.text-center]
+= Aufgabe
+
+== Animal Projekt
+
+[.text-justify]
+Schreibe die Klasse *Animal*.
+Ein Tier besitzt einen *name* und kann einen Laut von sich geben *(noise)*.
+Verwende hierfür den Datentyp String.
+Schreiben einen Konstruktor, dem ein Name übergeben werden kann.
+Schreibe *getter* und *setter* für die Eigenschaften des Objekts.
+Schreibe die Methode *makeNoise()* mit der das Tier ein Laut machen kann.
+Dieser soll auf der Konsole erscheinen.
+Es handelt sich aber hierbei noch um keine konkrete Ausprägung eines Tiers, daher soll auf der Konsole *"I am an animal with no concrete expression.
+Which noise should I make?"* erscheinen.
+
+[.text-justify]
+Schreibe die Klasse *Dog* die von Animal erbt.
+Achte darauf, dass der Konstruktor von Animal vererbt bekommt.
+Überschreibe die Methode *makeNoise()* so, dass auf der Konsole *WAU WAU* erscheint.
+
+[.text-justify]
+Schreibe die Klasse *Cat* die äquivalent zu Dog ist.
+Allerdings soll diese *makeNoise()* Methode *MIAU MIAU* ausgeben.
+
+[.text-justify]
+Schreibe die Klasse *AnimalMain* mit folgender vorgegebenen *main - Methode*
+
+[source,java]
+public static void main(String[] arguments) {
+    Animal animal = new Animal ( "Tier" );
+    System.out.println ( animal.getName () );
+    animal.makeNoise ();
+    Dog bello = new Dog ( "Bello" );
+    System.out.println ( bello.getName () );
+    bello.makeNoise ();
+    Cat mika = new Cat ( "Mika" );
+    System.out.println ( mika.getName () );
+    mika.makeNoise ();
+}
+
+[.text-justify]
+Erkläre wie Bello und Mika ihren Namen bekommen und diesen ausgeben können.
+Was genau geschieht, wenn die einzelnen *makeNoise* methoden aufgerufen werden?

@@ -1,0 +1,46 @@
+[.text-center]
+= Aufgabe
+
+== Scrum Projekt
+
+[.text-justify]
+Schreibe die Klasse *TeamMember*.
+Ein Teammitglied besitzt einen *firstName* sowie einen *lastName* als auch ein *salary*.
+Schreibe einen Konstruktor, der alle Eigenschaften als Übergabeparameter besitzt.
+Schreibe *getter* und *setter*.
+Überschreibe sinnvoll die *toString()* und *equals()* Methode.
+
+[.text-justify]
+Schreibe die Klasse *Team*.
+Ein Team besitzt *name* und *status*.
+Des Weiteren ein Array von Teammitgliedern.
+Schreiben einen Konstruktor, der als Übergabeparameter den Teamnamen besitzt. initialisiere innerhalb des Konstruktors das Array auf die Größe von 0. Setze hier den Status auf *No Team*.
+Schreibe *getter* und *setter* für den Status.
+
+[.text-justify]
+Schreibe die Methode *addTeamMemberToTeam(TeamMember teamMemberToAdd)*.
+Die Methode soll sich wie folgt verhalten:
+
+[.text-justify]
+* Beim Hinzufügen eines neuen Teammitglieds soll geprüft werden, wie viele Teammitglieder (*nicht die Länge des Arrays!*) das Array enthält.
+Ist die Anzahl 0, so soll ein neues Array mit der Größe 6 initialisiert werden und das neue Teammitglied dem neuen Array hinzugefügt werden.
+* Solange die Anzahl kleiner als 5 Teammitglieder ist, soll der Status auf *"Too few to be a SCRUM team"* gesetzt werden.
+* Ab einer Anzahl von 5 Teammitgliedern soll das Array stets um 1 wachsen, sobald ein neues Teammitglied hinzugefügt wird.
+* Bei einer Anzahl von 5 Teammitglieder soll der Status auf *"Minimum size of a SCRUM team reached"* gesetzt werden.
+* Ab einer Anzahl von größer 9 soll der Status auf "*Too much members for a SCRUM team*" gesetzt werden.
+* Dazwischen soll der Status *Perfect size of a SCRUM team* gesetzt werden.
+
+[.text-justify]
+Überschreibe die *toString()* wie folgt:
+
+[.text-justify]
+* Es soll der Name des Teams ausgegeben werden.
+* Es soll ausgegeben werden, wie viele Mitglieder dieses Team hat.
+* Es sollen alle Teammitglieder ausgegeben werden die Teil des Teams sind.
+* Es soll ausgegeben werden, was der Gesamtverdienst des Teams ist.
+
+[.text-justify]
+Es ist erlaubt private Hilfsmethoden zu schreiben.
+
+[.text-justify]
+Schreibe die Klasse *ScrumTeamMain* mit einer *main - Methode*.

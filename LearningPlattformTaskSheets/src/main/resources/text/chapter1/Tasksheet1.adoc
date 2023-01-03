@@ -1,0 +1,288 @@
+[.text-center]
+= Programmieraufgaben
+
+== Aufgabe
+
+[.text-justify]
+Vor jeder Anweisung seien folgende Werte gegeben:
+
+[source,java]
+int firstNumber = 2;
+int secondNumber = 1;
+
+[.text-justify]
+Finde ohne Java-Compiler heraus, welchen Wert die Variablen _firstNumber_ und _secondNumber_ nach den einzelnen Anweisungen haben.
+Beachte hierbei genau die Priorität der entsprechenden Operatoren.
+Erläutere, wie du auf das Ergebnis kommst.
+Verifiziere dein theoretisches Ergebnis gegebenenfalls durch einen Programmablauf.
+
+[source,java]
+firstNumber = secondNumber = 2;
+firstNumber = secondNumber * 3 + 2;
+firstNumber = secondNumber * ( 3 + 2 );
+firstNumber *= secondNumber + 5;
+secondNumber %= 2 * firstNumber;
+firstNumber = --secondNumber;
+secondNumber = ~firstNumber;
+secondNumber = secondNumber++ * firstNumber;
+firstNumber = -5 - 5;
+secondNumber = secondNumber << 2;
+secondNumber = ( firstNumber == secondNumber ) ? 5 : 7;
+firstNumber = --secondNumber * secondNumber++;
+firstNumber = firstNumber ^ secondNumber;
+
+== Aufgabe
+
+[.text-justify]
+Welche Ausgabe erhälst du, wenn du folgendes Programm ausführen würdest?
+Begründe deine Antwort, ohne das Programm auszuführen.
+Überprüfe, indem du das Programm ausführst, ob deine Antworten stimmen.
+
+[source,java]
+public static void main ( String[] args ) {
+    System.out.println ( "Division of 10 by 12: " + ( 10 / 12 ) );
+    System.out.println ( "Division of 10. by 12: " + ( 10. / 12 ) );
+    System.out.println ( "Division of 10 by 12.: " + ( 10 / 12. ) );
+    int integerNumber;
+    float floatNumber = 1.5f, secondFloatNumber;
+    integerNumber = 10 * ( int ) floatNumber;
+    secondFloatNumber = 10 * floatNumber;
+    System.out.println ( "Multiplication (int)1.5f * 10: " + integerNumber );
+    System.out.println ( "Multiplication 1.5f * 10: " + secondFloatNumber );
+}
+
+== Aufgabe
+
+[.text-justify]
+Schreibe die Klasse *NumberComparer* und füge der Klasse die Methode *inputNumber()* hinzu.
+Die Methode *inputNumber()* ermöglicht es dir eine int Zahl von der Tastatur einzulesen.
+Ignoriere den Aufbau der Methode.
+Sie soll an dieser Stelle unbeachtet verwendet werden.
+
+[source,java]
+ public static int inputNumber () {
+    try {
+        Scanner scanner = new Scanner ( System.in );
+        System.out.print ( "Type a number: " );
+        return scanner.nextInt ();
+    } catch ( Exception exception ) {
+        System.out.println ( exception );
+    }
+    return -1;
+}
+
+[.text-justify]
+Lese nun zwei Zahlen von der Tastatur ein und vergleiche die beiden Zahlen auf Gleichheit (==).
+Sind die Zahlen gleich, soll folgender Text ausgegeben werden: "The numbers are equal!" Sind die beiden Zahlen nicht gleich, so soll ermittelt werden welche der beiden Zahlen die größere ist und dies dann entsprechend auf der Konsole ausgegeben werden.
+Beispiel: "The number 5 is larger than 2!"
+
+== Aufgabe
+
+[.text-justify]
+Erläutere, ohne das Programm auszuführen, was folgender Programmcode berechnet.
+
+[source,java]
+public static void main ( String[] arguments ) {
+    int firstNumber = 39;
+    int secondNumber = 5;
+    while ( firstNumber >= secondNumber ) {
+        firstNumber -= secondNumber;
+    }
+    System.out.println ( "??????? is: " + firstNumber );
+}
+
+== Aufgabe
+
+[.text-justify]
+Gegeben seien folgende Codezeilen:
+
+[source,java]
+int firstNumber = 5;
+int secondNumber = 7;
+int thirdNumber = (firstNumber == secondNumber) ? 1 : 0;
+
+[.text-justify]
+Welchen Wert hat thirdNumber?
+
+[.text-justify]
+Wie würde obige Codezeile mithilfe einer *if-else* Abfrage aussehen?
+
+== Aufgabe
+
+[.text-justify]
+Schreibe die Klasse *TestCase* mit einer main - Methode.
+Definiere die Variablen *firstVariable* und *secondVariable* mit geeignetem Datentyp.
+Führe einen manuellen Typecast durch
+
+== Aufgabe
+
+[.text-justify]
+Schreibe die Klasse *TestOverflow* mit einer main - Methode.
+Definiere in dieser die Variable *overflow* mit dem Datentyp short.
+Lasse die Variable überlaufen.
+Mache den Vorgang des Überlaufs auf der Konsole sichtbar.
+
+== Aufgabe
+
+[.text-justify]
+Schreibe die Klasse *TestGrade* mit einer main - Methode.
+Definiere die Variable _testScore_ mit dem du eine Punktzahl zwischen 0 und 100 festlegst.
+Definiere ebenfalls die Variable *grade* vom Typ char.
+Das Programm soll nun, je nach eingegebenem Testscore die entsprechende Note Ausgeben.
+Für einen Wert größer oder gleich 60 soll die Note D vergeben werden.
+Für einen Wert größer oder gleich 70 die Note C, für einen Wert größer oder gleich 80 die Note B und ab einem Wert von 95 die Note A. Ansonsten soll das Programm die Note F ausgeben.
+Verwenden hierzu *if-else if und else*.
+
+== Aufgabe
+
+[.text-justify]
+Nehme nun die obere Klasse und versuche das Gleiche mit einem *switch case*.
+Welchen Nachteil siehst du bei einer solchen Aufgabe mit einem *switch case*?
+Hinweis: Denke an dieser Stelle an einen *Fallthrough*
+
+== Aufgabe
+
+[.text-justify]
+Schreibe die Klasse *TestWarp* mit einer main - Methode.
+In der main - Methode soll die statische Funktion _warp_ aufgerufen werden.
+Die Funktion besitzt einen Übergabeparameter vom Typ int.
+Der Funktion soll ein Wert zwischen 1 und 9 übergeben werden.
+ALs Rückgabewert soll eine Zeichenkette vom für den Warpfaktor ausgegeben werden *(Warp 1 bis Warp 9)*.
+Diese Rückgabe wird dann in der main - Methode auf der Konsole ausgegeben.
+Verwende in der Funktion _warp_ ein *switch case*.
+Behandle ebenfalls ungültige Parameter sinnvoll.
+
+== Aufgabe
+
+[.text-justify]
+Schreibe die Klasse *Heater*.
+Diese Klasse besitzt eine private statische Methode *heat* mit einem Übergabeparameter vom Typ *int* welche den Namen *heatingGrade* trägt.
+In dieser Methode sollen Eingaben von Werten zwischen 1 und 5 verarbeitet werden.
+In dieser Methode soll mithilfe einer *switch-case* Verzweigung auf der Konsole ausgegeben werden wie warm ein Raum gerade ist.
+Auf der Konsole soll bei einem Wert von 1 die Ausgabe *Pretty Cold* erscheinen.
+Bei einer Eingabe der Zahl 5 *Damn Hot*.
+Lasse dir für die Zahlen 2, 3 und 4 eigene Ausgaben einfallen.
+Sollte ein anderer Wert außer einem Wert der zwischen 1 und 5 liegt eingegeben werden, so soll eine entsprechende Fehlermeldung auf der Konsole ausgeben werden.
+Nutze für die Ausgabe eine Fehlermeldung nicht das bekannte
+
+[source,java]
+System.out.println();
+
+sondern benutze stattdessen
+
+[source,java]
+System.err.println();
+
+[.text-justify]
+Führe die Methode in der *main - Methode* aus und überprüfe dein Ergebnis.
+
+== Aufgabe
+
+[.text-justify]
+Schreibe die Klasse *Comparer*.
+Diese Klasse besitzt eine private statische Methode *compare* mit zwei Übergabeparametern vom Typ *int*.
+Die Übergabeparameter tragen den Namen *firstNumber* und *secondNumber*.
+In dieser Methode soll verglichen werden, welche der beiden Zahlen die größere ist.
+Ist es die erste Zahl, so soll auf der Konsole *The first number is larger* erscheinen.
+Ist dagegen die zweite Zahl größer so soll auf der Konsole *The second number is larger* ausgegeben werden.
+Sind beide Zahlen gleich groß so soll auf der Konsole *The numbers are equal* erscheinen.
+
+[.text-justify]
+Führe die Methode in der *main - Methode* aus und überprüfe dein Ergebnis.
+
+== Aufgabe
+
+[.text-justify]
+Schreibe die Klasse *IQ*.
+Diese Klasse besitzt die private statische Methode *howIntelligentAreYou* mit dem Übergabeparameter vom Typ *int*.
+Der Übergabeparameter trägt den Namen *iq*.
+In dieser Methode soll festgestellt werden, wie intelligent du im Vergleich zum Rest der Welt bist.
+Liegt der IQ unter 100, so soll auf der Konsole *Worse than average* erscheinen.
+Ist dies nicht der Fall, so soll geprüft werden, ob der IQ über 130 liegt.
+Ist dies der Fall, so soll auf der Konsole *You belong to the most intelligent 2% of the population* erscheinen.
+Ansonsten soll *Not intelligent enough for Mensa test* ausgegeben werden.
+
+[.text-justify]
+Führe die Methode in der *main - Methode* aus und überprüfe dein Ergebnis.
+
+== Aufgabe
+
+[.text-justify]
+Schreibe die Klasse *Output*.
+Diese Klasse besitzt 3 statische private Methoden.
+Die Methode *outputWithForLoop* besitzt einen Übergabeparameter vom Typ *int* mit dem Namen *countUntilHere*.
+In dieser Methode soll mithilfe einer *for-Schleife* von 0 ab alle Zahlen ausgegeben werden bis die übergebene Zahl erreicht wurde.
+Die Methode *outputWithWhileLoop* besitzt den gleichen Übergabeparameter und soll wie die Methode zuvor das Gleiche machen, nur mithilfe einer *while-Schleife*.
+Zuletzt soll noch die Methode *outputWithDoWhileLoop* geschrieben werden.
+Auch die Methode besitzt den gleichen Übergabeparameter und soll alle Zahlen auf der Konsole mithilfe einer *do-while* Schleife ausgeben.
+
+[.text-justify]
+Führe die Methoden in der *main - Methode* aus und überprüfe dein Ergebnis.
+
+== Aufgabe
+
+[.text-justify]
+Schreibe die Klasse *ArithmeticAverageWithLoops*, welche das arithmetische Mittel (den Durchschnittswert) ermittelt.
+Das arithmetische Mittel soll jeweils mit einer anderen Schleife *(for, while, do while)* ermittelt werden.
+Das arithmetische Mittel soll als Wert vom Typ double gespeichert werden.
+Verwende für jede Schleife eine eigene Funktion.
+Jede Funktion soll in der Lage sein einen Parameter übergeben zu bekommen, der den maximalen Wert darstellt, bis zu dem die Schleife zählen soll.
+
+== Aufgabe
+
+[.text-justify]
+Schreibe die Klasse *FizzBuzz*.
+In dieser Klasse sollen die Zahlen von 1 bis 100 ausgegeben werden.
+Bei jeder Zahl die durch 5 teilbar ist, soll jedoch das Wort *"fizz"* erscheinen.
+Bei jeder Zahl, die durch 7 teilbar ist, soll das wort *"buzz"* erscheinen.
+Ist die Zahl dagegen durch beides teilbar, so soll auf der Konsole statt der Zahl das Wort *"fizz buzz""* erscheinen.
+Nutze in für diese Aufgabe den *Modulo* Operator.
+
+== Aufgabe
+
+[.text-justify]
+Analysiere folgendes Programm.
+Was erwartest du als Ausgabe, ohne den Programmcode abzutippen?
+Versuche die Aufgabe gedanklich auf einem Blatt Papier zu lösen.
+Programmiere anschließend das Programm nach und überprüfe deine Vermutung.
+
+[source,java]
+public classTest {
+    static final int BREITE = 20;
+    static final int HOEHE = 10;
+    public static void main ( String[] args ) {
+        int hoehe;
+        int breite;
+        breite = 0;
+        do {
+            System.out.print("*");
+            breite++;
+        } while(breite < BREITE);
+        System.out.println();
+        hoehe = 0;
+        while(hoehe < HOEHE -2) {
+            System.out.print("*");
+            breite = 1;
+            do{
+                System.out.print(" ");
+                breite++;
+            } while(breite < BREITE -1);
+            System.out.print("*");
+            System.out.println();
+            hoehe++;
+        }
+        breite = 0;
+        while(breite < BREITE) {
+            System.out.print("*");
+            breite++;
+        }
+        System.out.println();
+    }
+}
+
+=== Zusatzaufgabe
+
+[.text-justify]
+Das Programm wurde umständlicher Weise nur mir while und do-while Schleifen geschrieben.
+Schreiben Sie das Programm so um, dass es übersichtlicher wird.
+Verwenden Sie hierzu die *for-Schleife.*

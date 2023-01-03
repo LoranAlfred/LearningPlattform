@@ -1,0 +1,30 @@
+[.text-center]
+= Aufgabe
+
+== Bill Projekt
+
+[.text-justify]
+Erstelle die Klasse *Product*.
+Ein Produkt besitzt einen *productName*, *amount*, *price* sowie einen *totalPrice*.
+Die letzten beiden Attribute sollen vom Typ *float* sein.
+
+[.text-justify]
+Schreibe einen Konstruktor, der alle Eigenschaften als Übergabeparameter übergeben bekommt.
+Schreibe *getter* und *setter*.
+
+[.text-justify]
+Schreibe die Klasse *Bill*.
+Diese Klasse besitzt die *statische* Eigenschaft *numberOfBills* und normale Attribute wie *billNumber* sowie ein *Product* Array.
+Schreibe einen Konstruktor ohne Übergabeparameter.
+Innerhalb des Konstruktors soll die statische Eigenschaft um 1 erhöht werden und deren Wert der *billNumber* zugewiesen werden.
+Des Weiteren soll das Product Array auf eine Größe von 10 initialisiert werden.
+
+[.text-justify]
+Schreibe die Methode addProductToBull (Product productToAdd).
+In dieser Methode soll das Array durchlaufen werden und der Preis sowie dessen Mengen eines jeden hinzugefügten Produktes dem Gesamtpreis hinzuaddiert werden.
+Überschreibe die *toString()* Methode, sodass eine Rechnung auf der Konsole erscheint.
+Man darf sich private Hilfsmethoden schreiben.
+
+[.text-justify]
+Schreibe die Klasse *BillMain* mit einer *main - Methode* Erzeuge dir dort einige Produkte und füge diese deiner Rechnung hinzu.
+Lass dir die Rechnung auf der Konsole ausgeben.

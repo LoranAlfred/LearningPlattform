@@ -1,0 +1,23 @@
+[.text-center]
+= Aufgabe
+
+== Name Klasse
+
+[.text-justify]
+Erstelle die Klasse *Name*.
+Ein Name besitzt einen *first-* und einen *lastName*.
+Schreibe einen *Konstruktor*, der beide Eigenschaften als Übergabeparameter entgegennehmen kann.
+
+[.text-justify]
+Schreibe *getter* und *setter*.
+Schreibe die Methode *getObjectValuesToShowOnConsole()*.
+Mit dieser Methode sollen die Eigenschaften eines Objekts auf der konsole ausgegeben werden.
+Der Rückgabetyp der Methode ist *String*.
+
+[.text-justify]
+Schreibe die Klasse *NameMain* mit einer *main - Methode*.
+Erstelle dir dort 2 *Name* Objekte.
+Rufe von beiden Objekten die *getObjectValuesToShowOnConsole()* Methode auf.
+Schaue dir die Ausgabe an.
+Ändere die Eigenschaften des ersten Objektes über seine setter Methode.
+Ruf erneut von beiden Objekten die *getObjectValuesToShowOnConsole()* auf und schau dir das Ergebnis auf der Konsole an.

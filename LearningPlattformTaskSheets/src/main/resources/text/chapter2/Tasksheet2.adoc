@@ -1,0 +1,22 @@
+[.text-center]
+= Aufgabe
+
+== Address Klasse
+
+[.text-justify]
+Erstelle die Klasse *Address*.
+Eine Adresse besitzt *street*, *houseNumber*, *postalCode*, *town*.
+Schreibe einen Konstruktor der alle Eigenschaften als Übergabeparameter übergeben bekommt.
+
+[.text-justify]
+Schreibe *getter* und *setter* Methoden.
+Schreibe zusätzlich die Methode *getObjectValuesToShowOnConsole()*.
+Mit dieser Methode sollen die Eigenschaften eines Objekts auf der Konsole ausgegeben werden.
+Der Rückgabetyp ist *String*.
+
+[.text-justify]
+Schreibe nun die Klasse *AddressMain* mit einer *main - Methode*.
+Erstelle dir dort 2 Address Objekte.
+Rufe von beiden Objekten die *getObjectValuesToShowOnConsole()* Methode auf und schauen dir die Ausgaben an.
+Ändere die Eigenschaften des ersten Objektes über seine setter Methoden.
+Rufe erneut von beiden Objekten die *getObjectValuesToShowOnConsole()* Methode auf und schaue dir das Ergebnis auf der Konsole an.

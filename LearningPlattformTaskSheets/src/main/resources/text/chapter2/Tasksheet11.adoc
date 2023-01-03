@@ -1,0 +1,45 @@
+[.text-center]
+= Aufgabe
+
+== University
+
+[.text-justify]
+Schreibe die Klasse *Name*.
+Ein Name besteht aus *firstName* und *lastName*.
+Nutze hierfür geeignete Datentypen.
+Erstelle einen Konstruktor, der Vor- und Nachname übergeben bekommt.
+Schreibe *setter* und *getter*.
+Überschreibe die *toString()* Methode so, dass Vor- und Nachname ausgegeben werden können.
+Nutze in der *toString()* Methode das *StringJoiner* Objekt.
+Für den Fall, dass das Objekt noch unbekannt sein sollte, informiere dich im Internet über dessen Verwendung.
+
+[.text-justify]
+Schreibe die Klasse *Address*.
+Diese Klasse besitzt *street*, *houseNumber*, *postalCode* und *town*.
+Schreibe einen Konstruktor in dem diese Attribute übergeben werden können.
+Schreibe *setter* und *getter*.
+Überschreibe die *toString()* so, dass auf der Konsole die Adresse ausgegeben werden kann.
+Verwende auch hierfür das *StringJoiner* Objekt.
+Die Ausgabe soll wie folgt aussehen:
+
+[.text-justify]
+Strasse Hausnummer
+
+[.text-justify]
+Postleitzahl Stadt
+
+[.text-justify]
+Schreibe die Klasse *Student*.
+Ein Student besitzt eine Matrikelnummer.
+Diese soll mithilfe einer *UUID* abgebildet werden.
+Lese dich in die JavaDoc dieses Objektes ein.
+Informationen hierfür findest du im Internet.
+Des Weiteren besitzt er Name und Address.
+Ein Student kann an mehreren *Lecture* teilnehmen.
+Definiere hierfür ein Array bestehend aus Lectures.
+Die größe des Arrays soll hierbei 20 betragen. AUch die Matrikelnummer soll in diesem Konstruktor erstellt werden.
+Schreibe einen Konstruktor in dem Vor- und Nachname übergeben werden können.
+In diesem soll auch das Array initialisiert werden.
+Schreibe einen zweiten Konstruktor der Vor- und Nachname sowie Strasse, Hausnummer, Postleitzahl und Stadt übergeben bekommen kann.
+Der zweite Konstruktor soll den ersten mithilfe von *this()* aufrufen und Vor- und Nachname an diesen übergeben. Schreibe *getter* und *setter*. Der getter der Matrikelnummer soll vom Rückgabetyp String sein. Die Matrikelnummer enthält keinen setter.
+Lecture besitzt folgende Methoden.

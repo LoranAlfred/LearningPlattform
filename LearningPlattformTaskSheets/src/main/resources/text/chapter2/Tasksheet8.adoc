@@ -1,0 +1,53 @@
+[.text-center]
+= Aufgabe
+
+== Pump Projekt
+
+[.text-justify]
+Ein produzierender Betrieb verwaltet seine hergestellten Produkte zurzeit mit folgenden drei Klassen.
+
+[source,java]
+public class MembranePump {
+    private String name;
+    private int depth;
+    private int height;
+    private int width;
+    private float maximumOperatingPressure;
+    private String membraneMaterial;
+    private int weight;
+    private int maximumOutput;
+}
+
+[source,java]
+public class RotaryPump {
+    private int depth;
+    private int height;
+    private int width;
+    private String name;
+    private int amountOfShovels;
+    private int maximumRotationSpeed;
+    private int weight;
+    private int maximumOutput;
+    private float maximumOperatingPressure;
+}
+
+[source,java]
+public class CatchBasin {
+    private int depth;
+    private int height;
+    private int width;
+    private String name;
+    private int weight;
+    private int capacity;
+}
+
+[.text-justify]
+Entwickle eine passende Vererbungshierarchie, welche die gemeinsamen Attribute in Basisklassen zusammenfasst.
+Erweitere zusätzlich die Klasse um weitere folgende Methoden.
+
+[.text-justify]
+* Konstruktoren um eine einfache Initialisierung der Klassen zu ermöglichen,
+* die Methode print(), um den Inhalt der Klasse auf dem Bildschirm auszugeben.
+
+[.text-justify]
+Schreibe die Klasse *PumpMain* mit einer *main - Methode* die mehrere Produkte auf dem Bildschirm ausgibt.

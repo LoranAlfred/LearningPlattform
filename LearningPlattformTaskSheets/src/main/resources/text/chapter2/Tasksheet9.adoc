@@ -1,0 +1,21 @@
+[.text-center]
+= Aufgabe
+
+== Building Projekt
+
+[.text-justify]
+Schreibe die Klasse *Address* mit dem Eigenschaften *street*, *houseNumber*, *postalCode* und *town*.
+Schreibe *getter* und *setter*.
+Überschreibe die *toString()* Methode so, dass die Adresse auf der Konsole ausgegeben werden kann.
+
+[.text-justify]
+Schreibe die Klasse *Building*.
+Ein Gebäude hat einen *name* sowie *address*.
+Schreibe *getter* und *setter*.
+Überschreibe ebenfalls die *toString()* Methode so, dass *name* und *address* des Gebäudes ausgegeben werden können.
+
+[.text-justify]
+Schreibe die Klasse *House* und *School*, die von Building erben.
+
+[.text-justify]
+Schreibe die Klasse *BuildingMain* mit einer *main - Methode*, in der du mit den Objekten der erstellten Klasse herumspielst.

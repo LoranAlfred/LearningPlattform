@@ -1,0 +1,51 @@
+[.text-center]
+= Aufgabe
+
+== Soccer Projekt
+
+[.text-justify]
+Schreibe die Klasse *Name*.
+Die Klasse Name besitz *firstName* und *lastName* als Eigenschaft.
+Schreibe einen *Konstruktor* der die beiden Parameter übergeben bekommen kann.
+Schreibe *getter* und *setter*.
+In den *settern* soll über die Klasse *NameValidator* sichergestellt werden, das der übergebene Vor- oder Nachname nicht *null* ist und mindestens 3 Zeichen enthalten muss.
+Ist dies nicht der Fall, so soll eine Fehlermeldung auf der Konsole ausgegeben werden.
+Nutze dazu
+
+[source,java]
+System.err.println("Some error message").
+
+[.text-justify]
+Schreibe die Klasse *NameValidator*.
+Diese Klasse besteht aus 2 statischen Methoden mit dem Rückgabewert boolean.
+In diesen Methoden sollen die Überprüfungen implementiert werden, die in den settern der Klasse Name beschrieben sind.
+
+[.text-justify]
+Schreibe die Klasse *SoccerPlayer*.
+Ein Fußballspieler besitzt eine *playerNumber*, sowie eine Referenz auf ein Name Objekt.
+Schreibe einen Konstruktor der wie folgt aussieht:
+
+[source,java]
+public SoccerPlayer ( int playerNumber, String firstName, String lastName ) {}
+
+[.text-justify]
+Schreibe *getter* und *setter*.
+Überschreibe die *toString()* so, dass Spielernummer und -name des Fußballspielers auf der Konsole ausgegeben werden können.
+
+[.text-justify]
+Schreibe die Klasse *SoccerTeam*.
+Diese Klasse besitzt auch einen Namen, allerdings vom Typ String.
+Des Weiteren ein Array von Fußballspielern.
+Das Array soll auf 11 initialisiert werden.
+Schreibe die Methode *addSoccerPlayerToTeam ( SoccerPlayer soccerPlayerToAdd )*.
+Mit dieser Methode soll ein Fußballspieler der Mannschaft hinzugefügt werden.
+Allerdings ist hierbei darauf zu achten, dass der Spieler nicht bereits in der Mannschaft ist.
+Hierzu darf man sich privater Hilfsmethoden behelfen.
+Schreibe die Methode *orderSoccerPlayer()*, welche die Spieler entsprechend ihrer Spielernummer von klein nach groß sortieren soll.
+Überschreibe die *toString()* so, dass dies den Inhalt der Fußballmannschaft ausgeben kann.
+
+[.text-justify]
+Schreibe die Klasse *SoccerTeamMain*.
+Erstelle in dieser Klasse innerhalb der Main - Methode mehrere Fußballspieler und eine Mannschaft.
+Füge die Spieler der Mannschaft hinzu.
+Lass dir die Mannschaft einmal vor und einmal nach dem Sortieren auf der Konsole ausgeben.

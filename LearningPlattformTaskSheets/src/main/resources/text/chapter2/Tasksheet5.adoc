@@ -1,0 +1,36 @@
+[.text-center]
+= Aufgabe
+
+== Cast Projekt
+
+[.text-justify]
+Erstelle die Klasse *Actor*. ein Schauspieler besitzt einen *firstName* und einen *lastName*, *age* sowie die Information, ob er angestellt ist oder nicht.
+Schreibe *setter* und *getter*.
+Überschreibe die *toString()* Methode so, dass die Eigenschaften auf der Konsole ausgegeben werden können.
+
+[.text-justify]
+Schreibe die Klasse *Cast*.
+Ein Cast besitzt einen *castName* sowie ein Array, bestehend aus Schauspielern.
+Schreiben Sie einen *Konstruktor*, den den castName als Übergabeparameter bekommen kann.
+Initialisiere das Array auf eine größe von 5. Schreibe *getter* und *setter* für den Castnamen.
+Schreibe die Methode *addActorToCast (Actor actorToAdd)*, welche einen Schauspieler dem Cast hinzufügen kann.
+Dies soll aber nur geschehen, wenn:
+
+[.text-justify]
+* das Array noch einen freien Platz hat und
+* der Schauspieler noch nicht angestellt ist.
+
+[.text-justify]
+Schreibe die Methode *sortCast()*.
+In dieser Methode sollen die hinzugefügten Schauspieler im Cast von Jung nach alt sortiert werden.
+Überschreibe die *toString()* so, dass der Name des Casts sowie die darin enthaltenen Schauspieler auf der Konsole ausgegeben werden können.
+
+[.text-justify]
+Das Schreiben privater Hilfsmethoden ist generell erlaubt.
+
+[.text-justify]
+Schreibe die Klasse *CastMain* mit einer *main - Methode*.
+In dieser initialisiere mindestens 4 Actor Objekte.
+Erstelle ein Cast Objekt und füge die Schauspieler diesem hinzu.
+Erstelle auch Actor Objekte, die bereits angestellt sind und überprüfe, ob du sie diesem Cast hinzufügen kannst.
+Gebe dem Cast 1 Mal vor und 1 Mal nach dem Sortieren aus.
