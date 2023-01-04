@@ -12,6 +12,7 @@
         <module>LearningPlattformChapter_1</module>
         <module>LearningPlattformChapter_2</module>
         <module>LearningPlattformTaskSheets</module>
+
     </modules>
 
     <properties>
